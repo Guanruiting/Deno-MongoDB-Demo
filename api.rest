@@ -1,0 +1,25 @@
+GET http://0.0.0.0:8000/notes
+
+###
+GET http://0.0.0.0:8000/notes/5f7c5b9500f127ea00869c14
+
+###
+POST http://0.0.0.0:8000/notes
+Content-Type: application/json
+
+{
+    "title":"Test 4",
+    "description":"new note"
+}
+
+###
+PUT http://0.0.0.0:8000/notes/5f7c5b9500f127ea00869c14
+Content-Type: application/json
+
+{
+    "title":"Update Test2",
+    "description":"update note2"
+}
+
+###
+DELETE http://0.0.0.0:8000/notes/5f7c5b9500f127ea00869c14
